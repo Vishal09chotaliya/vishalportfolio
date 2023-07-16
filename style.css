@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: #080808;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navigationbar {
+    display: flex;
+    padding: 10px;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    /* background-color: black; */
+    background-color: #080808;
+}
+
+.navigatoinbar ul {
+    display: inline-block;
+}
+
+.navigationbar .logo img {
+    height: 67px;
+    width: 155px;
+}
+
+.navigationbar .logo .v {
+    color: red;
+    font-size: 40px;
+}
+
+.navigationbar .logo .other {
+    display: flex;
+    margin-top: 11%;
+}
+
+.navigationbar .menu .item {
+    margin: 5px;
+    padding: 8px;
+    display: flex;
+    display: inline-block;
+}
+
+.navigationbar .menu .item a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navigationbae .menu ul {
+    display: flex;
+}
+
+.navigationbar .menu .item li {
+    list-style: none;
+}
+
+.navigationbar .menu ul:hover li {
+    filter: blur(1px);
+}
+
+.navigationbar .menu ul li:hover {
+    filter: blur(0px);
+}
+
+#togglenav {
+    display: none;
+}
+
+
+@media(max-width:630px) {
+    .navigationbar {
+        display: none;
+    }
+
+    #togglenav {
+        display: block;
+    }
+
+}
+
+.container-fluid img {
+    height: 67px;
+    width: 155px;
+}
+
+.main {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail {
+    margin-top: 15%;
+    margin-left: 8%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #ff004f;
+}
+
+.detail p {
+    line-height: 22px;
+}
+
+.detail a {
+    text-decoration: none;
+    background-color: #212121;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.detail a:hover {
+    color: #212121;
+    background-color: #e4e4e4;
+}
+
+
+.images {
+    width: 45%;
+    height: 80%;
+}
+
+.images img {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.images:hover .me {
+    left: 45%;
+}
+
+@media(max-width:1110px) {
+    .images img {
+        margin-top: auto;
+        margin-left: auto;
+    }
+}
+
+.heading {
+    padding: 20px;
+    margin: 6% 20% 2% 20%
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: #4a49489c;
+}
+
+.box .image img {
+    padding: 10px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.box {
+    width: 400px;
+    margin: 10px;
+    transition: 0.7s;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.box p {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 7px;
+}
+
+.contact-me {
+    background-color: #4a49489c;
+    flex-wrap: wrap;
+    width: 102%;
+    overflow: hidden;
+    margin: 40px 0px 0px 0px;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+a p {
+    font-size: 20px;
+}
+
+.media {
+    display: inline-block;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.media:hover {
+    color: black;
+}
+
+hr {
+    font-weight: bold;
+}
+
+.visit {
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* -----------about------------ */
+.about {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.about hr {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.about-me .con {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tab-title {
+    display: flex;
+    margin-left: 20%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    transition: 0.5s;
+}
+
+.tab-link.active-link::after {
+    width: 70%;
+}
+
+.tab-content {
+    margin-left: 22%;
+    margin-top: 25px;
+    display: none;
+    height: 180px;
+}
+
+.tab-content li {
+    margin: 8px;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* ------------end--------------- */

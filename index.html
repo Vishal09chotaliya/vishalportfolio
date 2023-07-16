@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal portfolio</title>
+    <link rel="icon" href="images/title-logo-removebg-preview.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap.js"></script>
+
+</head>
+
+<body class="body">
+    <div class="navigationbar" id="nav">
+        <div class="logo">
+            <a href="#nav">
+                <img src="images/logo.gif" alt="">
+            </a>
+        </div>
+        <div class="menu active">
+            <ul class="navmenu">
+                <div class="item">
+                    <li><a href="#nav">Home</a></li>
+                </div>
+                <div class="item">
+                    <li><a href="#projects">Work</a></li>
+                </div>
+                <div class="item">
+                    <li><a href="#about-me">About Us</a></li>
+                </div>
+                <div class="item">
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="togglenav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nav">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="detail" id="details" data-aos="fade-right">
+
+            <h1>Hi, I'm <span>Vishal Chotaliya</span></h1>
+
+            <p>Front-End Devloper <br><br>This is my official website to shows all
+                <br>Detail and work exiprins devlopment
+            </p>
+            <a download="vishal's CV" href="CV/Vishal chotaliya (3).pdf">DOWNLOAD CV</a>
+        </div>
+        <div class="images" data-aos="zoom-in-up">
+            <img src="images/me.png" class="me">
+        </div>
+    </div>
+
+
+    <div class="project" id="projects">
+        <div class="heading">
+            <h1>There are some of my project.
+                <hr>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/Screenshot (35).png" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    Security provider
+                </p>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/Screenshot 2023-07-12 104152.png" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    Css Design
+                </p>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/Screenshot (17).png" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    From Design
+                </p>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/Screenshot (38).png" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    Contact Page
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-me" id="about-me">
+        <div class="about">
+            <h2>About Me</h2>
+            <hr>
+        </div>
+        <p class="con" data-aos="fade-up">Hello! i am a creative designer. i can design a good web. i love to do new
+            design. i love writing a code.<br>i have BCA (Bachlore of Computer Application) digree complate soon and
+            running a MCA (Master of Computer Application).<br>
+            I have skill to Html, css, javascript, bootstrap, c programing language, web design etc...</p>
+
+        <div class="tab-title" data-aos="fade-up">
+            <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-link" onclick="opentab('Education')">Education</p>
+            <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+        </div>
+        <div class="tab-content active-tab" id="Skills" data-aos="fade-up">
+            <ul>
+                <li>Html</li>
+                <li>Css (Cascading Style Sheet)</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>C Programming Language</li>
+                <li>Web Design</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Education" data-aos="fade-up">
+            <ul>
+                <li>10th and 12th complate at jesar</li>
+                <li>I have complate BCA (Bachlore of computer Application) in SSCCM bhavnagar</li>
+                <li>MCA (Master of computer Application) make is going on in the sigma university - vadodara</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Experience" data-aos="fade-up">
+            <ul>
+                <p>No Experience</p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-me" id="contact">
+        <div class="heading" data-aos="fade-up">
+            <h1>Contact Me <i class="fa-solid fa-handshake"></i></h1>
+        </div>
+        <div class="socialmedia" data-aos="fade-up">
+            <a target="_blank" href="https://www.linkedin.com/in/vishal-chotaliya-ab2894248/">
+                <div class="media">
+
+                    <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+                </div>
+            </a>
+            <a target="_blank" href="https://github.com/Vishal09chotaliya">
+                <div class="media">
+
+                    <p><i class="fa-brands fa-github"></i> GitHub</p>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/vishal_chotaliya_09/">
+                <div class="media">
+
+                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/VishalChotali10">
+                <div class="media">
+
+                    <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+                </div>
+            </a>
+
+            <a target="_blank" href="mailto:vishalchotaliya2003@gmail.com   ">
+                <div class="media">
+
+                    <p><i class="fa-regular fa-envelope"></i> Gmail</p>
+                </div>
+                <a href="tel:9327879757">
+                    <div class="media">
+                        <p><i class="fa-solid fa-phone"></i> Conatact</p>
+                    </div>
+                </a>
+            </a>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="visit">
+                <p>Thank You For Visit &#128522;</p>
+                <p>&copy;2022-23 Portfolio. All Rights Reserved. Design By Vishal Chotaliya.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <!-- aos animation -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
